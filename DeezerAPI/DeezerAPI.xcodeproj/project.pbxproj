@@ -19,6 +19,14 @@
 		9D5AC63B257EB4950014BF6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AC609257EB43E0014BF6E /* LaunchScreen.storyboard */; };
 		9D5AC63C257EB4950014BF6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AC607257EB43E0014BF6E /* Assets.xcassets */; };
 		9D5AC63D257EB4950014BF6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AC604257EB43B0014BF6E /* Main.storyboard */; };
+		9D5AC689257EB6D90014BF6E /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC688257EB6D90014BF6E /* ReusableCell.swift */; };
+		9D5AC694257EB7060014BF6E /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC693257EB7060014BF6E /* ConfigurableCell.swift */; };
+		9D5AC69F257EB7320014BF6E /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC69E257EB7320014BF6E /* CollectionDataSource.swift */; };
+		9D5AC6A9257EB7540014BF6E /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC6A8257EB7540014BF6E /* CollectionArrayDataSource.swift */; };
+		9D5AC6B0257EB7730014BF6E /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC6AF257EB7730014BF6E /* TableDataSource.swift */; };
+		9D5AC6BA257EB7930014BF6E /* TableArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC6B9257EB7930014BF6E /* TableArrayDataSource.swift */; };
+		9D5AC6C0257EB7AB0014BF6E /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC6BF257EB7AB0014BF6E /* GenericDataProvider.swift */; };
+		9D5AC6C6257EB7C40014BF6E /* ArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC6C5257EB7C40014BF6E /* ArrayDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,14 @@
 		9D5AC641257EB4950014BF6E /* DeezerAPIDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerAPIDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5AC65B257EB57F0014BF6E /* DeeerApiProd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeeerApiProd.plist; sourceTree = "<group>"; };
 		9D5AC65C257EB57F0014BF6E /* DeezerApiDev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeezerApiDev.plist; sourceTree = "<group>"; };
+		9D5AC688257EB6D90014BF6E /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		9D5AC693257EB7060014BF6E /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		9D5AC69E257EB7320014BF6E /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		9D5AC6A8257EB7540014BF6E /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
+		9D5AC6AF257EB7730014BF6E /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		9D5AC6B9257EB7930014BF6E /* TableArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableArrayDataSource.swift; sourceTree = "<group>"; };
+		9D5AC6BF257EB7AB0014BF6E /* GenericDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProvider.swift; sourceTree = "<group>"; };
+		9D5AC6C5257EB7C40014BF6E /* ArrayDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +128,7 @@
 		9D5AC5FD257EB43B0014BF6E /* DeezerAPI */ = {
 			isa = PBXGroup;
 			children = (
+				9D5AC686257EB6B90014BF6E /* GenericDataSources */,
 				9D5AC5FE257EB43B0014BF6E /* AppDelegate.swift */,
 				9D5AC602257EB43B0014BF6E /* ViewController.swift */,
 				9D5AC604257EB43B0014BF6E /* Main.storyboard */,
@@ -139,6 +156,53 @@
 				9D5AC622257EB43E0014BF6E /* Info.plist */,
 			);
 			path = DeezerAPIUITests;
+			sourceTree = "<group>";
+		};
+		9D5AC686257EB6B90014BF6E /* GenericDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				9D5AC687257EB6C60014BF6E /* CellAbstractions */,
+				9D5AC692257EB6EC0014BF6E /* DataSources */,
+			);
+			path = GenericDataSources;
+			sourceTree = "<group>";
+		};
+		9D5AC687257EB6C60014BF6E /* CellAbstractions */ = {
+			isa = PBXGroup;
+			children = (
+				9D5AC688257EB6D90014BF6E /* ReusableCell.swift */,
+				9D5AC693257EB7060014BF6E /* ConfigurableCell.swift */,
+			);
+			path = CellAbstractions;
+			sourceTree = "<group>";
+		};
+		9D5AC692257EB6EC0014BF6E /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				9D5AC6AE257EB7640014BF6E /* TableView */,
+				9D5AC69D257EB71B0014BF6E /* CollectionView */,
+				9D5AC6BF257EB7AB0014BF6E /* GenericDataProvider.swift */,
+				9D5AC6C5257EB7C40014BF6E /* ArrayDataProvider.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		9D5AC69D257EB71B0014BF6E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9D5AC69E257EB7320014BF6E /* CollectionDataSource.swift */,
+				9D5AC6A8257EB7540014BF6E /* CollectionArrayDataSource.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		9D5AC6AE257EB7640014BF6E /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9D5AC6AF257EB7730014BF6E /* TableDataSource.swift */,
+				9D5AC6B9257EB7930014BF6E /* TableArrayDataSource.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +363,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5AC6B0257EB7730014BF6E /* TableDataSource.swift in Sources */,
 				9D5AC603257EB43B0014BF6E /* ViewController.swift in Sources */,
 				9D5AC5FF257EB43B0014BF6E /* AppDelegate.swift in Sources */,
+				9D5AC6A9257EB7540014BF6E /* CollectionArrayDataSource.swift in Sources */,
+				9D5AC694257EB7060014BF6E /* ConfigurableCell.swift in Sources */,
+				9D5AC689257EB6D90014BF6E /* ReusableCell.swift in Sources */,
+				9D5AC6C6257EB7C40014BF6E /* ArrayDataProvider.swift in Sources */,
+				9D5AC69F257EB7320014BF6E /* CollectionDataSource.swift in Sources */,
+				9D5AC6C0257EB7AB0014BF6E /* GenericDataProvider.swift in Sources */,
+				9D5AC6BA257EB7930014BF6E /* TableArrayDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
