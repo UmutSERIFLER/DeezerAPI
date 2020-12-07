@@ -75,6 +75,11 @@
 		9D5AC79A257EBE210014BF6E /* AlbumTracksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC798257EBE210014BF6E /* AlbumTracksModel.swift */; };
 		9D5AC7A0257EBE300014BF6E /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC79F257EBE300014BF6E /* TrackModel.swift */; };
 		9D5AC7A1257EBE300014BF6E /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC79F257EBE300014BF6E /* TrackModel.swift */; };
+		9D5AC7A8257EC4F40014BF6E /* Keys.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AC7A6257EC4F40014BF6E /* Keys.json */; };
+		9D5AC7AE257EC4FE0014BF6E /* Keys.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D5AC7AD257EC4FE0014BF6E /* Keys.json */; };
+		9D5AC7B8257EC5C00014BF6E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC7B7257EC5C00014BF6E /* ImageCache.swift */; };
+		9D5AC7BF257EC6D40014BF6E /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC7BE257EC6D40014BF6E /* UITableView+Extension.swift */; };
+		9D5AC7C9257EC73C0014BF6E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC7C8257EC73C0014BF6E /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +143,11 @@
 		9D5AC791257EBE070014BF6E /* AlbumInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInfoModel.swift; sourceTree = "<group>"; };
 		9D5AC798257EBE210014BF6E /* AlbumTracksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTracksModel.swift; sourceTree = "<group>"; };
 		9D5AC79F257EBE300014BF6E /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		9D5AC7A6257EC4F40014BF6E /* Keys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Keys.json; sourceTree = "<group>"; };
+		9D5AC7AD257EC4FE0014BF6E /* Keys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Keys.json; sourceTree = "<group>"; };
+		9D5AC7B7257EC5C00014BF6E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		9D5AC7BE257EC6D40014BF6E /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		9D5AC7C8257EC73C0014BF6E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,11 +206,12 @@
 		9D5AC5FD257EB43B0014BF6E /* DeezerAPI */ = {
 			isa = PBXGroup;
 			children = (
-				9D5AC74A257EBC3C0014BF6E /* Utilities */,
-				9D5AC747257EBC190014BF6E /* Resources */,
-				9D5AC73B257EBBF60014BF6E /* Models */,
-				9D5AC6CB257EB9740014BF6E /* Network */,
 				9D5AC686257EB6B90014BF6E /* GenericDataSources */,
+				9D5AC6CB257EB9740014BF6E /* Network */,
+				9D5AC747257EBC190014BF6E /* Resources */,
+				9D5AC74A257EBC3C0014BF6E /* Utilities */,
+				9D5AC7BD257EC5E30014BF6E /* Extensions */,
+				9D5AC73B257EBBF60014BF6E /* Models */,
 				9D5AC5FE257EB43B0014BF6E /* AppDelegate.swift */,
 				9D5AC602257EB43B0014BF6E /* ViewController.swift */,
 				9D5AC604257EB43B0014BF6E /* Main.storyboard */,
@@ -339,6 +350,7 @@
 		9D5AC748257EBC230014BF6E /* Prod */ = {
 			isa = PBXGroup;
 			children = (
+				9D5AC7AD257EC4FE0014BF6E /* Keys.json */,
 			);
 			path = Prod;
 			sourceTree = "<group>";
@@ -346,6 +358,7 @@
 		9D5AC749257EBC280014BF6E /* Dev */ = {
 			isa = PBXGroup;
 			children = (
+				9D5AC7A6257EC4F40014BF6E /* Keys.json */,
 			);
 			path = Dev;
 			sourceTree = "<group>";
@@ -355,6 +368,7 @@
 			children = (
 				9D5AC74B257EBC480014BF6E /* KeyProvider.swift */,
 				9D5AC756257EBC710014BF6E /* ConnectionManager.swift */,
+				9D5AC7B7257EC5C00014BF6E /* ImageCache.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -379,6 +393,15 @@
 				9D5AC79F257EBE300014BF6E /* TrackModel.swift */,
 			);
 			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		9D5AC7BD257EC5E30014BF6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D5AC7BE257EC6D40014BF6E /* UITableView+Extension.swift */,
+				9D5AC7C8257EC73C0014BF6E /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,6 +527,7 @@
 			files = (
 				9D5AC60B257EB43E0014BF6E /* LaunchScreen.storyboard in Resources */,
 				9D5AC608257EB43E0014BF6E /* Assets.xcassets in Resources */,
+				9D5AC7AE257EC4FE0014BF6E /* Keys.json in Resources */,
 				9D5AC606257EB43B0014BF6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D5AC63B257EB4950014BF6E /* LaunchScreen.storyboard in Resources */,
+				9D5AC7A8257EC4F40014BF6E /* Keys.json in Resources */,
 				9D5AC63C257EB4950014BF6E /* Assets.xcassets in Resources */,
 				9D5AC63D257EB4950014BF6E /* Main.storyboard in Resources */,
 			);
@@ -543,6 +568,7 @@
 				9D5AC73D257EBC070014BF6E /* KeysModel.swift in Sources */,
 				9D5AC6B0257EB7730014BF6E /* TableDataSource.swift in Sources */,
 				9D5AC603257EB43B0014BF6E /* ViewController.swift in Sources */,
+				9D5AC7C9257EC73C0014BF6E /* UIImageView+Extension.swift in Sources */,
 				9D5AC5FF257EB43B0014BF6E /* AppDelegate.swift in Sources */,
 				9D5AC792257EBE070014BF6E /* AlbumInfoModel.swift in Sources */,
 				9D5AC6A9257EB7540014BF6E /* CollectionArrayDataSource.swift in Sources */,
@@ -563,12 +589,14 @@
 				9D5AC77D257EBDBD0014BF6E /* ArtistModel.swift in Sources */,
 				9D5AC731257EBBD40014BF6E /* DeezerApi.swift in Sources */,
 				9D5AC710257EBB430014BF6E /* Router.swift in Sources */,
+				9D5AC7B8257EC5C00014BF6E /* ImageCache.swift in Sources */,
 				9D5AC701257EBA2E0014BF6E /* URLParameterEncoder.swift in Sources */,
 				9D5AC722257EBB8A0014BF6E /* HTTPMethod.swift in Sources */,
 				9D5AC69F257EB7320014BF6E /* CollectionDataSource.swift in Sources */,
 				9D5AC6C0257EB7AB0014BF6E /* GenericDataProvider.swift in Sources */,
 				9D5AC6BA257EB7930014BF6E /* TableArrayDataSource.swift in Sources */,
 				9D5AC784257EBDCF0014BF6E /* AlbumsModel.swift in Sources */,
+				9D5AC7BF257EC6D40014BF6E /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
