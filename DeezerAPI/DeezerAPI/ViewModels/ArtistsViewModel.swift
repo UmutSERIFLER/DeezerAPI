@@ -19,9 +19,10 @@ class ArtistsViewModel: ViewModelProtocol {
         }
     }
     
-    init() {
-        self.apiService = DeezerAPIProvider()
-        self.searchArtists(name: "A")
+    init(_ artists: ArtistsModel? = nil,_ apiService: DeezerAPIProvider = DeezerAPIProvider()) {
+        self.artists = artists
+        self.apiService = apiService
+        self.searchArtists(name: "")
     }
     
     func searchArtists(name: String?) {

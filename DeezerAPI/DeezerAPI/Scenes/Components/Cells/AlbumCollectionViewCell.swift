@@ -24,7 +24,7 @@ class AlbumCollectionViewCell: UICollectionViewCell, ConfigurableCell {
         }
     }
     
-    fileprivate let albumIV : UIImageView = {
+    fileprivate lazy var albumIV : UIImageView = {
         let iv = UIImageView()
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFit
@@ -32,7 +32,7 @@ class AlbumCollectionViewCell: UICollectionViewCell, ConfigurableCell {
         return iv
     }()
     
-    fileprivate let albumTitle : UILabel = {
+    fileprivate lazy var albumTitle : UILabel = {
         let label = UILabel()
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 12)
@@ -41,7 +41,7 @@ class AlbumCollectionViewCell: UICollectionViewCell, ConfigurableCell {
         return label
     }()
     
-    fileprivate let albumSubTitle : UILabel = {
+    fileprivate lazy var albumSubTitle : UILabel = {
         let label = UILabel()
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 8)

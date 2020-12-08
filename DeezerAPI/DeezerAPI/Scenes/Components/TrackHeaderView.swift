@@ -9,7 +9,7 @@ import UIKit
 
 class TrackHeaderView: UIView {
     
-    lazy var headerTitle: UILabel = {
+    fileprivate var headerTitle: UILabel = {
         let headerTitle = UILabel()
         headerTitle.font = UIFont(name: "Arial", size: 16)
         headerTitle.text = "Volume 1"

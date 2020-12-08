@@ -71,7 +71,7 @@ fileprivate extension ArtistsViewController {
             if let selectedCell: ArtistTableViewCell = self?.listview.cellForRow(at: indexPath) as? ArtistTableViewCell, let artist = selectedCell.artist {
                 self?.searchBar.resignFirstResponder()
                 DispatchQueue.main.async {
-                    self?.navigationController?.pushViewController(AlbumsViewController(viewModel: AlbumsViewModel(artist: artist)), animated: true)
+                    self?.navigationController?.pushViewController(AlbumsViewController(viewModel: AlbumsViewModel(artist)), animated: true)
                 }
             }
         }

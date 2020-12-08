@@ -21,14 +21,14 @@ class ArtistTableViewCell: UITableViewCell, ConfigurableCell {
         }
     }
     
-    fileprivate let artistImage : UIImageView = {
+    fileprivate lazy var artistImage : UIImageView = {
         let imageView = UIImageView(frame: CGRect.init(origin: .zero, size: CGSize(width: 50, height: 50)))
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         return imageView
     }()
     
-    private let artistName : UILabel = {
+    fileprivate lazy var artistName : UILabel = {
        let label = UILabel()
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 16)
