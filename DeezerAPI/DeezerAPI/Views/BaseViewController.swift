@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseViewController<T>: UIViewController {
+class BaseViewController<T: UIView>: UIViewController {
     
     var listview: T!
     
