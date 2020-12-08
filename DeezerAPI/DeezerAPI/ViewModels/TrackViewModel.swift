@@ -20,11 +20,13 @@ class TrackViewModel: ViewModelProtocol {
     }
     
     private(set) var coverImageLink: String?
+    private(set) var albumName: String?
     
     init(album: AlbumModel) {
         self.apiService = DeezerAPIProvider()
-        self.getAlbumTrack(id: album.id)
+        albumName = album.title
         coverImageLink = album.cover_medium
+        self.getAlbumTrack(id: album.id)
     }
     
     func getAlbumTrack(id: Int) {

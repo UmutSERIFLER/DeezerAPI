@@ -11,8 +11,8 @@ class ArtistsViewController: BaseViewController<UITableView>, UISearchBarDelegat
     
     lazy var searchBar : UISearchBar = CustomSearchBar(frame: self.view.frame)
     
-    fileprivate var artistDataSource: ArtistListDataSource?
-    fileprivate var viewModel: ArtistsViewModel
+    fileprivate(set) var artistDataSource: ArtistListDataSource?
+    fileprivate(set) var viewModel: ArtistsViewModel
     
     init(viewModel: ArtistsViewModel = ArtistsViewModel(), tableView: UITableView = BaseTableView(cellArray: [ArtistTableViewCell.self])) {
         self.viewModel = viewModel
@@ -71,9 +71,7 @@ fileprivate extension ArtistsViewController {
             if let selectedCell: ArtistTableViewCell = self?.listview.cellForRow(at: indexPath) as? ArtistTableViewCell, let artist = selectedCell.artist {
                 self?.searchBar.resignFirstResponder()
                 DispatchQueue.main.async { [weak self] in
-                    let albumViewController = AlbumsViewController(viewModel: AlbumsViewModel(artist: artist))
-                    albumViewController.title = artist.name
-                    self?.navigationController?.pushViewController(albumViewController, animated: true)
+                    self?.navigationController?.pushViewController(AlbumsViewController(viewModel: AlbumsViewModel(artist: artist)), animated: true)
                 }
             }
         }

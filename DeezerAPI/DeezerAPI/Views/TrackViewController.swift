@@ -9,13 +9,14 @@ import UIKit
 
 class TrackViewController: BaseViewController<UITableView> {
     
-    internal var viewModel: TrackViewModel?
-    fileprivate var tracksDataSource: TracksDataSource?
-    fileprivate var coverImage = UIImageView()
+    fileprivate(set) var viewModel: TrackViewModel?
+    fileprivate(set) var tracksDataSource: TracksDataSource?
+    fileprivate(set) var coverImage = UIImageView()
     
     init(viewModel: TrackViewModel,_ tableView: UITableView = BaseTableView(cellArray: [TrackTableViewCell.self])) {
         self.viewModel = viewModel
         super.init()
+        self.title = viewModel.albumName
         self.listview = tableView
     }
     

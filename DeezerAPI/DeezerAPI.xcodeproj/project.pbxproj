@@ -509,8 +509,8 @@
 		9D5AC81C257ED70C0014BF6E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9D5AC81D257ED71D0014BF6E /* ArtistsViewController.swift */,
 				9D5AC828257ED7420014BF6E /* BaseViewController.swift */,
+				9D5AC81D257ED71D0014BF6E /* ArtistsViewController.swift */,
 				9D5AC83D257ED7F10014BF6E /* AlbumsViewController.swift */,
 				9D5AC844257ED8370014BF6E /* TrackViewController.swift */,
 			);

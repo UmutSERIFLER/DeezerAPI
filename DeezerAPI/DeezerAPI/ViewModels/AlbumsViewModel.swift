@@ -19,8 +19,11 @@ class AlbumsViewModel: ViewModelProtocol {
         }
     }
     
+    private(set) var artistName: String?
+    
     init(artist: ArtistModel) {
         self.apiService = DeezerAPIProvider()
+        self.artistName = artist.name
         self.getArtistAlbums(id: artist.id)
     }
     
