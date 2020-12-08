@@ -9,7 +9,7 @@ import UIKit
 
 class ArtistListViewHeader: UIView {
     
-    lazy var headerIcon : UIImageView = {
+    fileprivate lazy var headerIcon : UIImageView = {
         let icon = UIImageView(frame: CGRect(x: 5, y: 5, width: 30, height: 30))
         icon.image = UIImage(named: "microphone_icon")
         icon.contentMode = .scaleAspectFit
@@ -17,7 +17,7 @@ class ArtistListViewHeader: UIView {
         return icon
     }()
     
-    lazy var headerTitle: UILabel = {
+    fileprivate lazy var headerTitle: UILabel = {
         let headerTitle = UILabel()
         headerTitle.font = UIFont.systemFont(ofSize: 22, weight: .light)
         headerTitle.text = "Artists"

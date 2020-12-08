@@ -21,10 +21,10 @@ class AlbumsViewModel: ViewModelProtocol {
     
     private(set) var artistName: String?
     
-    init(artist: ArtistModel) {
-        self.apiService = DeezerAPIProvider()
-        self.artistName = artist.name
-        self.getArtistAlbums(id: artist.id)
+    init(_ artist: ArtistModel? = nil,_ apiService: DeezerAPIProvider = DeezerAPIProvider()) {
+        self.apiService = apiService
+        self.artistName = artist?.name
+        self.getArtistAlbums(id: artist?.id ?? 0)
     }
     
     func getArtistAlbums(id: Int) {

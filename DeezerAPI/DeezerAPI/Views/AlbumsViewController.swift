@@ -9,8 +9,8 @@ import UIKit
 
 class AlbumsViewController: BaseViewController<UICollectionView> {
     
-    fileprivate(set) var viewModel: AlbumsViewModel?
-    fileprivate(set) var albumDataSource: AlbumsDataSource?
+    private(set) var viewModel: AlbumsViewModel?
+    private(set) var albumDataSource: AlbumsDataSource?
     
     init(viewModel: AlbumsViewModel, collectionView: UICollectionView = BaseCollectionView(cellArray: [AlbumCollectionViewCell.self])) {
         self.viewModel = viewModel
@@ -52,8 +52,7 @@ fileprivate extension AlbumsViewController {
         let dataSource = AlbumsDataSource(collectionView: self.listview, array: [albumList], cellConfig: [])
         dataSource.collectionItemSelectionHandler = { [weak self] indexPath in
             if let albumCell : AlbumCollectionViewCell = self?.listview.cellForItem(at: indexPath) as? AlbumCollectionViewCell, let album = albumCell.album {
-                
-                DispatchQueue.main.async { [weak self] in
+                DispatchQueue.main.async {
                     self?.navigationController?.pushViewController(TrackViewController(viewModel: TrackViewModel(album: album)), animated: true)
                 }
             }

@@ -23,7 +23,7 @@ class TrackTableViewCell: UITableViewCell, ConfigurableCell {
         }
     }
     
-    fileprivate let trackOrder : UILabel = {
+    fileprivate lazy var trackOrder : UILabel = {
        let label = UILabel()
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 16)
@@ -32,7 +32,7 @@ class TrackTableViewCell: UITableViewCell, ConfigurableCell {
         return label
     }()
     
-    fileprivate let trackName : UILabel = {
+    fileprivate lazy var trackName : UILabel = {
        let label = UILabel()
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 16)
@@ -41,7 +41,7 @@ class TrackTableViewCell: UITableViewCell, ConfigurableCell {
         return label
     }()
     
-    fileprivate let artistName : UILabel = {
+    fileprivate lazy var artistName : UILabel = {
        let label = UILabel()
         label.textColor = .lightGray
         label.font = UIFont.boldSystemFont(ofSize: 12)
@@ -50,7 +50,7 @@ class TrackTableViewCell: UITableViewCell, ConfigurableCell {
         return label
     }()
     
-    fileprivate let trackDuration : UILabel = {
+    fileprivate lazy var trackDuration : UILabel = {
        let label = UILabel()
         label.textColor = .lightGray
         label.font = UIFont.boldSystemFont(ofSize: 16)

@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         KeyProvider.readValues()
+        
+        //Coordinator pattern can also be used which is nicer
         let navigationController = UINavigationController(rootViewController: ArtistsViewController())
         navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController.navigationBar.barTintColor = .black

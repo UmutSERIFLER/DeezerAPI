@@ -26,6 +26,10 @@ fileprivate enum DeezerErrorTypes {
 
 protocol DeezerAPIProviderProtocol {
     func genericParser<M>(_ data: Data?, _ response: URLResponse?, _ error: Error?, completionHandler: @escaping (Result<M, DeezerErrorResponse>) -> ()) where M : Decodable
+    func searchArtist(searchName: String, completionHandler: @escaping (Result<ArtistsModel, DeezerErrorResponse>) -> ())
+    func getArtistAlbums(id albumID: Int, completionHandler: @escaping (Result<AlbumsModel, DeezerErrorResponse>) -> ())
+    func getAlbumInfo(id albumInfoId: Int, completionHandler: @escaping (Result<AlbumInfoModel, DeezerErrorResponse>) -> ())
+    func getAlbumTrack(id albumTrackId: Int, completionHandler: @escaping (Result<AlbumTracksModel, DeezerErrorResponse>) -> ())
 }
 
 struct DeezerAPIProvider: DeezerAPIProviderProtocol {
@@ -57,13 +61,12 @@ struct DeezerAPIProvider: DeezerAPIProviderProtocol {
         }
     }
     
-    
     func searchArtist(searchName: String, completionHandler: @escaping (Result<ArtistsModel, DeezerErrorResponse>) -> ()) {
         router.request(.searchArtist(name: searchName)) { data,response,error  in
-                self.genericParser(data, response, error) { (result) in
-                    completionHandler(result)
-                }
+            self.genericParser(data, response, error) { (result) in
+                completionHandler(result)
             }
+        }
     }
     
     func getArtistAlbums(id albumID: Int, completionHandler: @escaping (Result<AlbumsModel, DeezerErrorResponse>) -> ()) {
@@ -74,13 +77,13 @@ struct DeezerAPIProvider: DeezerAPIProviderProtocol {
         }
     }
     
-        func getAlbumInfo(id albumInfoId: Int, completionHandler: @escaping (Result<AlbumInfoModel, DeezerErrorResponse>) -> ()) {
-            router.request(.albumInfo(albumID: albumInfoId)) { (data, response, error) in
-                self.genericParser(data, response, error) { (result) in
-                    completionHandler(result)
-                }
+    func getAlbumInfo(id albumInfoId: Int, completionHandler: @escaping (Result<AlbumInfoModel, DeezerErrorResponse>) -> ()) {
+        router.request(.albumInfo(albumID: albumInfoId)) { (data, response, error) in
+            self.genericParser(data, response, error) { (result) in
+                completionHandler(result)
             }
         }
+    }
     
     func getAlbumTrack(id albumTrackId: Int, completionHandler: @escaping (Result<AlbumTracksModel, DeezerErrorResponse>) -> ()) {
         router.request(.albumTracks(albumID: albumTrackId)) { (data, response, error) in
@@ -88,7 +91,7 @@ struct DeezerAPIProvider: DeezerAPIProviderProtocol {
                 completionHandler(result)
             }
         }
-    
+        
     }
     
 }

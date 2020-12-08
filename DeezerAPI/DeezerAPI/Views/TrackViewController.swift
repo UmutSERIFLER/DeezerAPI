@@ -9,22 +9,23 @@ import UIKit
 
 class TrackViewController: BaseViewController<UITableView> {
     
-    fileprivate(set) var viewModel: TrackViewModel?
-    fileprivate(set) var tracksDataSource: TracksDataSource?
-    fileprivate(set) var coverImage = UIImageView()
+    private(set) var viewModel: TrackViewModel?
+    private(set) var tracksDataSource: TracksDataSource?
+    private(set) var coverImage = UIImageView()
     
     init(viewModel: TrackViewModel,_ tableView: UITableView = BaseTableView(cellArray: [TrackTableViewCell.self])) {
         self.viewModel = viewModel
         super.init()
         self.title = viewModel.albumName
         self.listview = tableView
+        self.updateUI()
     }
     
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.updateUI()
+
     }
     
     func updateUI(){
