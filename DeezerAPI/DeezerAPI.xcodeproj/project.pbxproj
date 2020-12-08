@@ -92,6 +92,35 @@
 		9D5AC7F6257ED2850014BF6E /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC7F4257ED2850014BF6E /* BaseCollectionView.swift */; };
 		9D5AC7FC257ED2AC0014BF6E /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC7FB257ED2AC0014BF6E /* NSObject+Extension.swift */; };
 		9D5AC7FD257ED2AC0014BF6E /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC7FB257ED2AC0014BF6E /* NSObject+Extension.swift */; };
+		9D5AC804257ED6910014BF6E /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC803257ED6910014BF6E /* ViewModelProtocol.swift */; };
+		9D5AC805257ED6910014BF6E /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC803257ED6910014BF6E /* ViewModelProtocol.swift */; };
+		9D5AC80F257ED6B30014BF6E /* ArtistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC80E257ED6B30014BF6E /* ArtistsViewModel.swift */; };
+		9D5AC810257ED6B30014BF6E /* ArtistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC80E257ED6B30014BF6E /* ArtistsViewModel.swift */; };
+		9D5AC816257ED6E00014BF6E /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC815257ED6E00014BF6E /* AlbumsViewModel.swift */; };
+		9D5AC817257ED6E00014BF6E /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC815257ED6E00014BF6E /* AlbumsViewModel.swift */; };
+		9D5AC81E257ED71D0014BF6E /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC81D257ED71D0014BF6E /* ArtistsViewController.swift */; };
+		9D5AC81F257ED71D0014BF6E /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC81D257ED71D0014BF6E /* ArtistsViewController.swift */; };
+		9D5AC829257ED7420014BF6E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC828257ED7420014BF6E /* BaseViewController.swift */; };
+		9D5AC82A257ED7420014BF6E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC828257ED7420014BF6E /* BaseViewController.swift */; };
+		9D5AC830257ED7920014BF6E /* SearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC82F257ED7920014BF6E /* SearchBar+Extension.swift */; };
+		9D5AC831257ED7920014BF6E /* SearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC82F257ED7920014BF6E /* SearchBar+Extension.swift */; };
+		9D5AC837257ED7C90014BF6E /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC836257ED7C90014BF6E /* ViewController+Extension.swift */; };
+		9D5AC838257ED7C90014BF6E /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC836257ED7C90014BF6E /* ViewController+Extension.swift */; };
+		9D5AC83E257ED7F10014BF6E /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC83D257ED7F10014BF6E /* AlbumsViewController.swift */; };
+		9D5AC83F257ED7F10014BF6E /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC83D257ED7F10014BF6E /* AlbumsViewController.swift */; };
+		9D5AC845257ED8370014BF6E /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC844257ED8370014BF6E /* TrackViewController.swift */; };
+		9D5AC846257ED8370014BF6E /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC844257ED8370014BF6E /* TrackViewController.swift */; };
+		9D5AC84C257ED88F0014BF6E /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC84B257ED88F0014BF6E /* TrackTableViewCell.swift */; };
+		9D5AC84D257ED88F0014BF6E /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC84B257ED88F0014BF6E /* TrackTableViewCell.swift */; };
+		9D5AC857257ED8D90014BF6E /* TrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC856257ED8D90014BF6E /* TrackViewModel.swift */; };
+		9D5AC858257ED8D90014BF6E /* TrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC856257ED8D90014BF6E /* TrackViewModel.swift */; };
+		9D5AC85F257EDAF70014BF6E /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC85E257EDAF70014BF6E /* CustomSearchBar.swift */; };
+		9D5AC860257EDAF70014BF6E /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC85E257EDAF70014BF6E /* CustomSearchBar.swift */; };
+		9D5AC86E257EE32F0014BF6E /* CellConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC86D257EE32F0014BF6E /* CellConfigModel.swift */; };
+		9D5AC86F257EE32F0014BF6E /* CellConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC86D257EE32F0014BF6E /* CellConfigModel.swift */; };
+		9D5AC879257EEA7F0014BF6E /* TrackHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC878257EEA7F0014BF6E /* TrackHeaderView.swift */; };
+		9D5AC87A257EEA7F0014BF6E /* TrackHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5AC878257EEA7F0014BF6E /* TrackHeaderView.swift */; };
+		9DF307AE257EF7BB00A46C16 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF307AD257EF7BB00A46C16 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +195,21 @@
 		9D5AC7ED257ED2690014BF6E /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		9D5AC7F4257ED2850014BF6E /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		9D5AC7FB257ED2AC0014BF6E /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		9D5AC803257ED6910014BF6E /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		9D5AC80E257ED6B30014BF6E /* ArtistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewModel.swift; sourceTree = "<group>"; };
+		9D5AC815257ED6E00014BF6E /* AlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewModel.swift; sourceTree = "<group>"; };
+		9D5AC81D257ED71D0014BF6E /* ArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
+		9D5AC828257ED7420014BF6E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9D5AC82F257ED7920014BF6E /* SearchBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchBar+Extension.swift"; sourceTree = "<group>"; };
+		9D5AC836257ED7C90014BF6E /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		9D5AC83D257ED7F10014BF6E /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		9D5AC844257ED8370014BF6E /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		9D5AC84B257ED88F0014BF6E /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		9D5AC856257ED8D90014BF6E /* TrackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewModel.swift; sourceTree = "<group>"; };
+		9D5AC85E257EDAF70014BF6E /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		9D5AC86D257EE32F0014BF6E /* CellConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigModel.swift; sourceTree = "<group>"; };
+		9D5AC878257EEA7F0014BF6E /* TrackHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackHeaderView.swift; sourceTree = "<group>"; };
+		9DF307AD257EF7BB00A46C16 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +268,8 @@
 		9D5AC5FD257EB43B0014BF6E /* DeezerAPI */ = {
 			isa = PBXGroup;
 			children = (
+				9D5AC81C257ED70C0014BF6E /* Views */,
+				9D5AC802257ED6810014BF6E /* ViewModels */,
 				9D5AC686257EB6B90014BF6E /* GenericDataSources */,
 				9D5AC6CB257EB9740014BF6E /* Network */,
 				9D5AC747257EBC190014BF6E /* Resources */,
@@ -353,6 +399,7 @@
 				9D5AC770257EBD830014BF6E /* ResponseModels */,
 				9D5AC768257EBD500014BF6E /* ErrorModels */,
 				9D5AC73C257EBC070014BF6E /* KeysModel.swift */,
+				9D5AC86D257EE32F0014BF6E /* CellConfigModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -420,6 +467,9 @@
 				9D5AC7BE257EC6D40014BF6E /* UITableView+Extension.swift */,
 				9D5AC7C8257EC73C0014BF6E /* UIImageView+Extension.swift */,
 				9D5AC7FB257ED2AC0014BF6E /* NSObject+Extension.swift */,
+				9D5AC82F257ED7920014BF6E /* SearchBar+Extension.swift */,
+				9D5AC836257ED7C90014BF6E /* ViewController+Extension.swift */,
+				9DF307AD257EF7BB00A46C16 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -435,13 +485,46 @@
 		9D5AC7D3257ED1EF0014BF6E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9D5AC7D4257ED2050014BF6E /* ArtistTableViewCell.swift */,
-				9D5AC7DF257ED2270014BF6E /* AlbumCollectionViewCell.swift */,
+				9D5AC85D257EDACC0014BF6E /* Cells */,
 				9D5AC7E6257ED2480014BF6E /* ArtistListViewHeader.swift */,
+				9D5AC878257EEA7F0014BF6E /* TrackHeaderView.swift */,
 				9D5AC7ED257ED2690014BF6E /* BaseTableView.swift */,
 				9D5AC7F4257ED2850014BF6E /* BaseCollectionView.swift */,
+				9D5AC85E257EDAF70014BF6E /* CustomSearchBar.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		9D5AC802257ED6810014BF6E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9D5AC803257ED6910014BF6E /* ViewModelProtocol.swift */,
+				9D5AC80E257ED6B30014BF6E /* ArtistsViewModel.swift */,
+				9D5AC815257ED6E00014BF6E /* AlbumsViewModel.swift */,
+				9D5AC856257ED8D90014BF6E /* TrackViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9D5AC81C257ED70C0014BF6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D5AC81D257ED71D0014BF6E /* ArtistsViewController.swift */,
+				9D5AC828257ED7420014BF6E /* BaseViewController.swift */,
+				9D5AC83D257ED7F10014BF6E /* AlbumsViewController.swift */,
+				9D5AC844257ED8370014BF6E /* TrackViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D5AC85D257EDACC0014BF6E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9D5AC7D4257ED2050014BF6E /* ArtistTableViewCell.swift */,
+				9D5AC7DF257ED2270014BF6E /* AlbumCollectionViewCell.swift */,
+				9D5AC84B257ED88F0014BF6E /* TrackTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -608,22 +691,31 @@
 				9D5AC73D257EBC070014BF6E /* KeysModel.swift in Sources */,
 				9D5AC6B0257EB7730014BF6E /* TableDataSource.swift in Sources */,
 				9D5AC603257EB43B0014BF6E /* ViewController.swift in Sources */,
+				9D5AC879257EEA7F0014BF6E /* TrackHeaderView.swift in Sources */,
 				9D5AC7C9257EC73C0014BF6E /* UIImageView+Extension.swift in Sources */,
 				9D5AC7F5257ED2850014BF6E /* BaseCollectionView.swift in Sources */,
+				9D5AC83E257ED7F10014BF6E /* AlbumsViewController.swift in Sources */,
 				9D5AC5FF257EB43B0014BF6E /* AppDelegate.swift in Sources */,
+				9D5AC80F257ED6B30014BF6E /* ArtistsViewModel.swift in Sources */,
 				9D5AC792257EBE070014BF6E /* AlbumInfoModel.swift in Sources */,
 				9D5AC6A9257EB7540014BF6E /* CollectionArrayDataSource.swift in Sources */,
+				9D5AC81E257ED71D0014BF6E /* ArtistsViewController.swift in Sources */,
 				9D5AC6CE257EB9D50014BF6E /* JSONParameterEncoder.swift in Sources */,
+				9D5AC84C257ED88F0014BF6E /* TrackTableViewCell.swift in Sources */,
 				9D5AC694257EB7060014BF6E /* ConfigurableCell.swift in Sources */,
+				9D5AC829257ED7420014BF6E /* BaseViewController.swift in Sources */,
 				9D5AC74C257EBC480014BF6E /* KeyProvider.swift in Sources */,
 				9D5AC76A257EBD630014BF6E /* DeezerErrorResponse.swift in Sources */,
 				9D5AC689257EB6D90014BF6E /* ReusableCell.swift in Sources */,
 				9D5AC762257EBCE40014BF6E /* DeezerAPIProvider.swift in Sources */,
 				9D5AC7A0257EBE300014BF6E /* TrackModel.swift in Sources */,
+				9D5AC804257ED6910014BF6E /* ViewModelProtocol.swift in Sources */,
 				9D5AC7EE257ED2690014BF6E /* BaseTableView.swift in Sources */,
+				9D5AC86E257EE32F0014BF6E /* CellConfigModel.swift in Sources */,
 				9D5AC757257EBC710014BF6E /* ConnectionManager.swift in Sources */,
 				9D5AC78B257EBDDF0014BF6E /* AlbumModel.swift in Sources */,
 				9D5AC708257EBA450014BF6E /* ParameterEncoding.swift in Sources */,
+				9D5AC857257ED8D90014BF6E /* TrackViewModel.swift in Sources */,
 				9D5AC7FC257ED2AC0014BF6E /* NSObject+Extension.swift in Sources */,
 				9D5AC71B257EBB6D0014BF6E /* EndPointType.swift in Sources */,
 				9D5AC6C6257EB7C40014BF6E /* ArrayDataProvider.swift in Sources */,
@@ -634,15 +726,21 @@
 				9D5AC710257EBB430014BF6E /* Router.swift in Sources */,
 				9D5AC7B8257EC5C00014BF6E /* ImageCache.swift in Sources */,
 				9D5AC701257EBA2E0014BF6E /* URLParameterEncoder.swift in Sources */,
+				9D5AC837257ED7C90014BF6E /* ViewController+Extension.swift in Sources */,
+				9D5AC830257ED7920014BF6E /* SearchBar+Extension.swift in Sources */,
 				9D5AC722257EBB8A0014BF6E /* HTTPMethod.swift in Sources */,
 				9D5AC7E7257ED2480014BF6E /* ArtistListViewHeader.swift in Sources */,
 				9D5AC7D5257ED2050014BF6E /* ArtistTableViewCell.swift in Sources */,
+				9D5AC845257ED8370014BF6E /* TrackViewController.swift in Sources */,
 				9D5AC69F257EB7320014BF6E /* CollectionDataSource.swift in Sources */,
+				9DF307AE257EF7BB00A46C16 /* String+Extension.swift in Sources */,
 				9D5AC6C0257EB7AB0014BF6E /* GenericDataProvider.swift in Sources */,
 				9D5AC6BA257EB7930014BF6E /* TableArrayDataSource.swift in Sources */,
+				9D5AC816257ED6E00014BF6E /* AlbumsViewModel.swift in Sources */,
 				9D5AC784257EBDCF0014BF6E /* AlbumsModel.swift in Sources */,
 				9D5AC7BF257EC6D40014BF6E /* UITableView+Extension.swift in Sources */,
 				9D5AC7E0257ED2270014BF6E /* AlbumCollectionViewCell.swift in Sources */,
+				9D5AC85F257EDAF70014BF6E /* CustomSearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,25 +766,36 @@
 			files = (
 				9D5AC7D6257ED2050014BF6E /* ArtistTableViewCell.swift in Sources */,
 				9D5AC72A257EBB9F0014BF6E /* HTTPTask.swift in Sources */,
+				9D5AC860257EDAF70014BF6E /* CustomSearchBar.swift in Sources */,
 				9D5AC73E257EBC070014BF6E /* KeysModel.swift in Sources */,
 				9D5AC6DD257EB9EE0014BF6E /* ConfigurableCell.swift in Sources */,
 				9D5AC6E2257EB9F20014BF6E /* TableDataSource.swift in Sources */,
+				9D5AC858257ED8D90014BF6E /* TrackViewModel.swift in Sources */,
+				9D5AC817257ED6E00014BF6E /* AlbumsViewModel.swift in Sources */,
 				9D5AC6F6257EB9FC0014BF6E /* GenericDataProvider.swift in Sources */,
 				9D5AC7EF257ED2690014BF6E /* BaseTableView.swift in Sources */,
 				9D5AC793257EBE070014BF6E /* AlbumInfoModel.swift in Sources */,
+				9D5AC82A257ED7420014BF6E /* BaseViewController.swift in Sources */,
 				9D5AC6D8257EB9EB0014BF6E /* ReusableCell.swift in Sources */,
 				9D5AC636257EB4950014BF6E /* ViewController.swift in Sources */,
 				9D5AC6EC257EB9F70014BF6E /* CollectionDataSource.swift in Sources */,
+				9D5AC831257ED7920014BF6E /* SearchBar+Extension.swift in Sources */,
 				9D5AC7FD257ED2AC0014BF6E /* NSObject+Extension.swift in Sources */,
 				9D5AC74D257EBC480014BF6E /* KeyProvider.swift in Sources */,
 				9D5AC76B257EBD630014BF6E /* DeezerErrorResponse.swift in Sources */,
 				9D5AC6F1257EB9F90014BF6E /* CollectionArrayDataSource.swift in Sources */,
 				9D5AC7F6257ED2850014BF6E /* BaseCollectionView.swift in Sources */,
+				9D5AC846257ED8370014BF6E /* TrackViewController.swift in Sources */,
 				9D5AC763257EBCE40014BF6E /* DeezerAPIProvider.swift in Sources */,
+				9D5AC84D257ED88F0014BF6E /* TrackTableViewCell.swift in Sources */,
 				9D5AC7A1257EBE300014BF6E /* TrackModel.swift in Sources */,
 				9D5AC758257EBC710014BF6E /* ConnectionManager.swift in Sources */,
 				9D5AC7E8257ED2480014BF6E /* ArtistListViewHeader.swift in Sources */,
+				9D5AC87A257EEA7F0014BF6E /* TrackHeaderView.swift in Sources */,
 				9D5AC7E1257ED2270014BF6E /* AlbumCollectionViewCell.swift in Sources */,
+				9D5AC838257ED7C90014BF6E /* ViewController+Extension.swift in Sources */,
+				9D5AC810257ED6B30014BF6E /* ArtistsViewModel.swift in Sources */,
+				9D5AC81F257ED71D0014BF6E /* ArtistsViewController.swift in Sources */,
 				9D5AC78C257EBDDF0014BF6E /* AlbumModel.swift in Sources */,
 				9D5AC709257EBA450014BF6E /* ParameterEncoding.swift in Sources */,
 				9D5AC71C257EBB6D0014BF6E /* EndPointType.swift in Sources */,
@@ -696,11 +805,14 @@
 				9D5AC77E257EBDBD0014BF6E /* ArtistModel.swift in Sources */,
 				9D5AC732257EBBD40014BF6E /* DeezerApi.swift in Sources */,
 				9D5AC711257EBB430014BF6E /* Router.swift in Sources */,
+				9D5AC83F257ED7F10014BF6E /* AlbumsViewController.swift in Sources */,
 				9D5AC702257EBA2E0014BF6E /* URLParameterEncoder.swift in Sources */,
 				9D5AC723257EBB8A0014BF6E /* HTTPMethod.swift in Sources */,
 				9D5AC6E7257EB9F40014BF6E /* TableArrayDataSource.swift in Sources */,
 				9D5AC6FB257EB9FE0014BF6E /* ArrayDataProvider.swift in Sources */,
 				9D5AC6CF257EB9D50014BF6E /* JSONParameterEncoder.swift in Sources */,
+				9D5AC86F257EE32F0014BF6E /* CellConfigModel.swift in Sources */,
+				9D5AC805257ED6910014BF6E /* ViewModelProtocol.swift in Sources */,
 				9D5AC785257EBDCF0014BF6E /* AlbumsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

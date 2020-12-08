@@ -25,11 +25,4 @@ struct AlbumModel: Decodable {
     var explicit_lyrics     :  Bool
     var type                :   String
     
-    
-    func albumCoverImage() -> URL? {
-        if let url =  URL(string: cover_medium) {
-            return url
-        }
-        return nil
-    }
 }

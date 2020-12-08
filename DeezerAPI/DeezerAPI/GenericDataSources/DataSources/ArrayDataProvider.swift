@@ -11,9 +11,9 @@ public class ArrayDataProvider<T>: GenericDataProvider {
     
     // MARK: - Internal Properties
     var items: [[T]] = []
-    var configurations = [(cellHeight: 0, sectionHeight: 0, sectionHeaderView: UIView())]
+    var configurations : [CellConfigModel]
     // MARK: - Lifecycle
-    init(array: [[T]], cellConfig: [(Int,Int,UIView)]) {
+    init(array: [[T]], cellConfig: [CellConfigModel]) {
         items = array
         self.configurations = cellConfig
     }
@@ -55,6 +55,6 @@ public class ArrayDataProvider<T>: GenericDataProvider {
     }
     
     public func getHeaderViewHeight(in section: Int) -> Int {
-        return self.configurations[section].sectionHeight
+        return self.configurations[section].sectionHeaderHeight
     }
 }

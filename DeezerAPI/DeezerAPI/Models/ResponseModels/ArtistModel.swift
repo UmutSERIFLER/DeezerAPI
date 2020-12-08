@@ -22,10 +22,4 @@ struct ArtistModel: Decodable {
     var tracklist           :   String
     var type                :   String
     
-    func artistImgeURL() -> URL? {
-        if let url =  URL(string: picture) {
-            return url
-        }
-        return nil
-    }
 }

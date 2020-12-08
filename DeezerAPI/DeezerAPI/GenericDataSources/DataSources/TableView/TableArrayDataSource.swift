@@ -11,11 +11,11 @@ open class TableArrayDataSource<T, Cell: UITableViewCell>: TableDataSource<Array
 where Cell: ConfigurableCell, Cell.T == T
 {
     // MARK: - Lifecycle
-    public convenience init(tableView: UITableView, array: [T], cellConfig: [(Int,Int,UIView)]) {
+    convenience init(tableView: UITableView, array: [T], cellConfig: [CellConfigModel] = []) {
         self.init(tableView: tableView, array: [array], cellConfig: cellConfig)
     }
     
-    public init(tableView: UITableView, array: [[T]], cellConfig: [(Int,Int,UIView)]) {
+    init(tableView: UITableView, array: [[T]], cellConfig: [CellConfigModel]) {
         let arrayProvider = ArrayDataProvider(array: array, cellConfig: cellConfig)
         super.init(tableView: tableView, provider: arrayProvider)
     }

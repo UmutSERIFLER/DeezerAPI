@@ -42,6 +42,7 @@ open class TableDataSource<Provider: GenericDataProvider, Cell: UITableViewCell>
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        provider.numberOfItems(in: section) == 0 ? tableView.setEmptyMessage("Please search new artist") : tableView.restore()
         return provider.numberOfItems(in: section)
     }
     
@@ -62,11 +63,11 @@ open class TableDataSource<Provider: GenericDataProvider, Cell: UITableViewCell>
     }
     
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if provider.numberOfItems(in: section) == 0 { return nil } // Comment line to keep headers in screen
         return provider.getHeaderView(in: section)
     }
     
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        print(provider.getHeaderViewHeight(in: section))
         return CGFloat(provider.getHeaderViewHeight(in: section))
     }
     

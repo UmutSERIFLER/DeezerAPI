@@ -11,11 +11,11 @@ open class CollectionArrayDataSource<T, Cell: UICollectionViewCell>: CollectionD
     where Cell: ConfigurableCell, Cell.T == T
 {
     // MARK: - Lifecycle
-    public convenience init(collectionView: UICollectionView, array: [T], cellConfig: [(Int,Int,UIView)]) {
+    convenience init(collectionView: UICollectionView, array: [T], cellConfig: [CellConfigModel] = []) {
         self.init(collectionView: collectionView, array: [array], cellConfig: cellConfig)
     }
 
-    public init(collectionView: UICollectionView, array: [[T]], cellConfig: [(Int,Int,UIView)]) {
+    init(collectionView: UICollectionView, array: [[T]], cellConfig: [CellConfigModel]) {
         let provider = ArrayDataProvider(array: array, cellConfig: cellConfig)
         super.init(collectionView: collectionView, provider: provider)
     }

@@ -12,7 +12,8 @@ class BaseTableView: UITableView {
     init(_ frame: CGRect = .zero,_ style: UITableView.Style = .grouped,cellArray: [UITableViewCell.Type]){
         super.init(frame: frame, style: .grouped)
         backgroundColor = .clear
-        self.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
+        tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
+        keyboardDismissMode = .onDrag
         cellArray.forEach { register($0, forCellReuseIdentifier: $0.identifier) }
     }
     
