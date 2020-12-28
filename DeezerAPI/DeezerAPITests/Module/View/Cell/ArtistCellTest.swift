@@ -12,7 +12,7 @@ class ArtistCellTest: XCTestCase {
 
     func test_cell_rendersCorrectData() throws {
         let cell = ArtistTableViewCell()
-        let artist = ResourceLoader.artists?.data.first//(resource: .movie1)
+        let artist = ResourceLoader.artists?.data.first
         cell.artist = artist
         XCTAssertEqual(artist?.name, cell.artist?.name)
         XCTAssertNotNil(cell.artist?.name)
