@@ -48,6 +48,7 @@ extension UIImageView {
 
         let url = URL(string: urlString)!
         currentURL = url
+        let semaphore = DispatchSemaphore(value: 1)
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             self?.currentTask = nil
 
@@ -75,11 +76,13 @@ extension UIImageView {
                 DispatchQueue.main.async {
                     self?.image = downloadedImage
                 }
+                semaphore.signal()
             }
         }
         // save and start new task
         currentTask = task
         task.resume()
+        semaphore.wait()
     }
 
 }

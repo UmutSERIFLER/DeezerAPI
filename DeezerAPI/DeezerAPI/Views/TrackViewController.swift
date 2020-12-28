@@ -31,6 +31,7 @@ class TrackViewController: BaseViewController<UITableView> {
     func updateUI(){
         coverImage.loadImageAsync(with: viewModel?.coverImageLink)
         coverImage.translatesAutoresizingMaskIntoConstraints = false
+        coverImage.contentMode = .scaleAspectFit
         view.addSubview(coverImage)
         NSLayoutConstraint.activate([
             coverImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
